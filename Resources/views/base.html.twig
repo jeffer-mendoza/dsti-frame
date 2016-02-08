@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <title>{% block title %}titulo del sitio{% endblock %}</title>
+        <meta charset="utf-8" />
+          {#IMPORTANTE!!! si se desea posicionar en el folder web usar {{ app.request.basepath }}#}
+
+        <link rel="icon" type="image/x-icon" href="{{ app.request.basepath }}/logo.ico" />
+       
+        {% block stylesheets %}
+            {#            aqui se agregan los archivos css#}
+            {# <link rel="stylesheet" href="{{ app.request.basepath }}/css/bootstrap.css"> #}
+
+        {% endblock %}
+    </head>
+
+    <body>
+        {% block body %}
+        {% endblock %}
+
+        <footer>
+            &#169  2015 dsti. All rights reserved.
+        </footer>
+        {% block javascripts %}
+        {% endblock %}
+    </body>
+</html>
