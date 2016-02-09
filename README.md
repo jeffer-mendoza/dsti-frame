@@ -1,7 +1,7 @@
 # dsti-frame
 Micro framework para crear paginas web sencillas, esta basado en Silex
 
-Installing 
+##Installing 
 
-git clone https://github.com/jeffersonM/dsti-frame.git
-git composer update
+*git clone https://github.com/jeffersonM/dsti-frame.git
+*git composer update
